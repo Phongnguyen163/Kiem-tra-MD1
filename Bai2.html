@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= [0,1,5,3,4,5]
+    function Ktra(num) {
+        let count = 0;
+        let b = [];
+        for (let i = 0; i < a.length; i++) {
+            if (num === a[i]) {
+                count++;
+                b.push(i);
+            }
+        }
+        if (count === 0) {
+            return "So nhap khong co trong mang";
+        }
+        return "So da nhap nam o vi tri: " + b;
+    }
+    let result = Ktra (6);
+    document.write(result);
+</script>
+</body>
+</html>

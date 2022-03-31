@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const nguyenam = ["a", "e", "i", "o", "u"];
+    let a = prompt("Nhap chuoi");
+    function Ktra(text) {
+        let count = 0;
+        for (let letter of text.toLowerCase()) {
+            if (nguyenam.includes(letter)) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return false;
+        }
+        else {
+            return count;
+        }
+    }
+
+    let songuyenam = Ktra (a);
+    if (songuyenam === false) {
+        document.write("Trong chuoi khong co nguyen am");
+    }
+    else {
+        document.write("So nguyen am trong chuoi la: " + songuyenam);
+    }
+</script>
+</body>
+</html>
